@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#FFFFFF">
+    
+
+    
+    <ImageButton
+        android:id="@+id/ibEnvivo"
+        android:layout_width="58dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="-4dp"
+        android:layout_marginBottom="-2dp"
+        android:background="@drawable/selector_envivo" />
+
+    <ImageButton
+        android:id="@+id/ibSeccion"
+        android:layout_width="58dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-5dp"
+        android:layout_toRightOf="@+id/ibEnvivo"
+        android:layout_marginBottom="-2dp"
+        android:background="@drawable/selector_seccion" />
+
+    <ImageButton
+        android:id="@+id/ibTwitter"
+        android:layout_width="58dp"
+        android:layout_height="59dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-4dp"
+        android:layout_toRightOf="@+id/ibSeccion"
+        android:layout_marginBottom="-2dp"
+        android:background="@drawable/selector_twitter" />
+
+    <ImageButton
+        android:id="@+id/ibRecetas"
+        android:layout_width="58dp"
+        android:layout_height="61dp"
+        android:layout_alignBottom="@+id/ibTwitter"
+        android:layout_toRightOf="@+id/ibTwitter"
+        android:layout_marginLeft="-4dp"
+        android:layout_marginBottom="-2dp"
+        android:background="@drawable/selector_recetas" />
+
+    <ImageButton
+        android:id="@+id/ibNoticias"
+        android:layout_width="58dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/ibRecetas"
+        android:layout_marginLeft="-4dp"
+        android:layout_marginBottom="-2dp"
+        android:background="@drawable/selector_noticias" />
+
+    <ImageButton
+        android:id="@+id/ibPodcast"
+        android:layout_width="58dp"
+        android:layout_height="59dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/ibNoticias"
+        android:layout_marginRight="-3dp"
+        android:layout_marginLeft="-4dp"
+        android:layout_marginBottom="-2dp"
+        android:background="@drawable/selector_podcast" />
+    
+
+</RelativeLayout>

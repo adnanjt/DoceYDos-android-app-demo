@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecetasInfo" >
+    
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/menu_buttons_layout" />
+    
+    <WebView
+        android:id="@+id/wbRecetasInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="false"
+        android:layout_marginBottom="55dp" >
+        
+    </WebView>
+    
+    
+    
+    <ImageButton
+        android:id="@+id/ibAnterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="176dp"
+        android:layout_marginLeft="-5dp"
+        android:src="@drawable/anterior2" 
+        android:background="@null"/>
+    
+    <ImageButton
+        android:id="@+id/ibSiguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="176dp"
+        android:layout_marginRight="-7dp"
+        android:src="@drawable/siguente2" 
+        android:background="@null"/>
+    
+    
+
+</RelativeLayout>

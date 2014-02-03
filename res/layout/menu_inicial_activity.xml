@@ -1,0 +1,89 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuInicial"
+    android:background="#FFFFFF" >
+
+    
+    <include 
+        layout="@layout/menu_buttons_layout" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"/>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="-8dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/menu_envivo" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/micro" />
+
+	
+    <ToggleButton 
+        android:id="@+id/togglePlayStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_play_stop" 
+        android:layout_centerHorizontal="true"
+        android:textOn=""
+        android:textOff=""
+        android:layout_marginTop="75dp"/>
+<!--  
+    <ProgressBar
+        android:id="@+id/pgLoadMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/togglePlayStop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="92dp" />
+-->
+    
+
+
+    <ImageView
+        android:id="@+id/ivSandClock"
+        android:contentDescription="hola soy una imagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/togglePlayStop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="72dp"
+        android:src="@drawable/sand_clock" />
+<!--  
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_horizontal"
+        android:text="Las trasmiciones en vivo son de Lunes a Viernes 12:00 pm a 2:30pm"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" />
+        -->
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/togglePlayStop"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="55dp"
+        android:layout_toLeftOf="@+id/ivSandClock"
+        android:text="En vivo de Lunes a Viernes 12:00 pm a 2:30 pm" 
+        android:textColor="#800000"/>
+    
+</RelativeLayout>
